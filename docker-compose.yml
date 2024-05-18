@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: vue-typinggame
+    hostname: dev
+    ports:
+      - "5173:5173"
+    restart: always
+    tty: true
+    volumes:
+      - .:/frontend
+    working_dir: /app
