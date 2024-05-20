@@ -16,6 +16,9 @@
     "src/**/*.{ts,vue}": [
       "prettier --write",
       "eslint --fix"
+    ],
+    "tests/*.test.{ts?(x)}": [
+      "vitest run"
     ]
   },
   "dependencies": {
@@ -34,6 +37,7 @@
     "eslint": "9.x",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vue-test-utils": "^1.0.1",
     "globals": "^15.2.0",
     "happy-dom": "^14.11.0",
     "husky": "^9.0.11",

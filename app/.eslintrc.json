@@ -7,12 +7,15 @@
       "parser": "babel-eslint"
     },
     "plugins": [
-      "vue"
+      "vue",
+      "vitest",
+      "vue-test-utils"
     ],
     "extends": [
       "eslint:recommended",
       "plugin:prettier/recommended",
       "plugin:vue/recommended",
+      "plugin:vitest/recommended",
       "prettier/vue"
     ],
     "rules": {
