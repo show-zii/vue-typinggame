@@ -47,11 +47,12 @@ export default defineConfig({
     host: true
   },
   test: {
+    globals: true,
     server: {
       deps: {
         inline: ['vuetify'],
       },
     },
-    environment: 'happy-dom',
+    environment: 'happy-dom'
   }
 })
